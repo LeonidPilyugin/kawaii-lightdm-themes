@@ -4,12 +4,13 @@ pkgname=kawaii-lightdm-themes
 pkgver=1.0
 pkgrel=1
 pkgdesc='Kawaii lightdm themes.'
+groups=(kawaii)
+url='https://github.com/LeonidPilyugin/kawaii-lightdm-themes'
 depends=(lightdm lightdm-webkit2-greeter)
-arch=('x86_64')
+arch=(x86_64)
 license=('GPL3')
-groups=('kawaii')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/LeonidPilyugin/$pkgname/releases/download/v$pkgver/files.tar.gz")
-sha256sums=('d32d066b9ebc9a3a9c77abd085a4f305194d0abf168b2b83a57fd82bb642314e')
+sha256sums=('de85fdf26c964a4b2f82411c6eebb582d5670fcd766dccf6fb4d02b558d4f128')
 
 package() {
     srcdir=$srcdir/files
